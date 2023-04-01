@@ -37,7 +37,7 @@ class Siswa extends CI_Controller
             $this->load->view('template/footer');
         } else {
             $this->Siswa_model->tambahDataSiswa();
-            // $this->session->set_flashdata('flash', 'Ditambahkan');
+            $this->session->set_flashdata('success', 'Ditambahkan');
             redirect('siswa');
         }
     }
@@ -56,7 +56,7 @@ class Siswa extends CI_Controller
             $this->load->view('template/footer');
         } else {
             $this->Siswa_model->updateDataSiswa();
-            // $this->session->set_flashdata('flash', 'DiEdit');
+            $this->session->set_flashdata('success', 'DiEdit');
             redirect('siswa');
         }
     }
