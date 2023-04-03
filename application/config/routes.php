@@ -55,5 +55,6 @@ $route['translate_uri_dashes'] = FALSE;
 
 $route['daftar'] = 'siswa/index';
 $route['tambah'] = 'siswa/tambahSiswa';
-$route['edit/(:any)'] = 'siswa/editSiswa/$id';
+$route['edit/(:num)'] = 'siswa/update/$1';
+$route['hapus/(:num)'] = 'siswa/hapus/$1';
 

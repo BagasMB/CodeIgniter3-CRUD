@@ -53,8 +53,8 @@
                             <td><?= $sis['nama']; ?></td>
                             <td><?= $sis['kelas'] ?></td>
                             <td>
-                                <a href="<?= base_url('siswa/update/'); ?><?= $sis['id']; ?>"><span class="badge bg-success ">Update</span></a>
-                                <a href="<?= base_url('siswa/hapus/'); ?><?= $sis['id']; ?>" onclick="return confirm('yakin kah manis?');"><span class="badge text-bg-danger">Delete</span></a>
+                                <a href="<?= base_url('edit/'); ?><?= $sis['id']; ?>"><span class="badge bg-success ">Update</span></a>
+                                <a href="<?= base_url('hapus/'); ?><?= $sis['id']; ?>" onclick="return confirm('yakin kah manis?');"><span class="badge text-bg-danger">Delete</span></a>
                             </td>
                         </tr>
                     <?php endforeach; ?>
